@@ -10,7 +10,7 @@ function Header (props) {
     <header>
         <div className={s.headerLeft}>
         <Link to ='/'>
-          <img width={40} height={40} src="img/logo.png" />
+          <img width={40} height={40} src="../img/logo.png" />
           </Link>
           <div className={s.headerInfo}>
             <h3>React Sneakers</h3>
@@ -20,17 +20,17 @@ function Header (props) {
         <div>
           <ul className={s.headerRight}>
             <li onClick={props.onClickCart}>
-              <img  width={18} height={18} src="img/cart.svg" alt='Корзина' />
+              <img  width={18} height={18} src="../img/cart.svg" alt='Корзина' />
               <span>{totalPrice} руб</span>
             </li>
             <li> 
               <Link to ='/favorites'>
-                <img width={18} height={18} src="img/like.svg" alt='Избранное' />
+                <img width={18} height={18} src="../img/like.svg" alt='Избранное' />
               </Link> 
               </li>
               <li> 
               <Link to ='/orders'>
-              <img width={18} height={18} src="img/user.svg" alt='Users' />
+              <img width={18} height={18} src="../img/user.svg" alt='Users' />
               </Link> 
               </li>
           </ul>

@@ -38,7 +38,7 @@ function Cart({ onClose, onRemove, items = [], opened }) {
   return (
     <div className={`${s.overlay} ${opened ? s.overlayVisible : ''}`}>
       <div className={s.drawer}>
-        <h2>Корзина<img onClick={onClose} className={s.cartItemRemove} src="img/delete.svg" alt="Close" />
+        <h2>Корзина<img onClick={onClose} className={s.cartItemRemove} src="../img/delete.svg" alt="Close" />
         </h2>
 
         {items.length > 0 ? ( <><div className={s.items}>
@@ -50,7 +50,7 @@ function Cart({ onClose, onRemove, items = [], opened }) {
                 <b>${obj.price} руб.</b>
               </div>
               <img onClick={() => onRemove(obj.id)} 
-              className={s.cartItemRemove} src="img/delete.svg" alt="Remove" />
+              className={s.cartItemRemove} src="../img/delete.svg" alt="Remove" />
             </div>
           ))
           }
@@ -68,10 +68,10 @@ function Cart({ onClose, onRemove, items = [], opened }) {
             <b>{totalPrice / 100 * 5} руб.</b>
           </li>
         </ul>
-        <button disabled={isLoading} onClick={onClickOrder} className={s.designBtn}>Оформить заказ <img src="/img/arrow.svg" alt="Arrow" /></button>
+        <button disabled={isLoading} onClick={onClickOrder} className={s.designBtn}>Оформить заказ <img src="../img/arrow.svg" alt="Arrow" /></button>
       </div> </> ) : (<Info title={isOrderComplete ? "Заказ оформлен!" : "Корзина пустая" }
                             description={isOrderComplete ? `Ваш заказ № ${orderId} будет передан курьерской службе` : "Добавьте хотя бы что-то" }
-                            image={isOrderComplete ? "img/zakaz.jpg" : 'img/empty-cart.jpg'} />
+                            image={isOrderComplete ? "../img/zakaz.jpg" : '../img/empty-cart.jpg'} />
         )
       }
 
