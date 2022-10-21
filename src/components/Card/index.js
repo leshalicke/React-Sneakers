@@ -39,7 +39,7 @@ function Card({ id, name, image,
         <rect x="124" y="230" rx="10" ry="10" width="32" height="32" />
       </ContentLoader>) : (<>
       {onFavorite && <div className={s.favorite} onClick={onClickFavorite}>
-        <img  src={isFavorite ? "/img/heart-like.svg" : "/img/heart-unlike.svg"} alt="Favorite" />
+        <img  src={isFavorite ? "img/heart-like.svg" : "img/heart-unlike.svg"} alt="Favorite" />
       </div>}
       <img width='85%' height={150} src={image} alt="Sneakers" />
       <h5>{name}</h5>
@@ -49,7 +49,7 @@ function Card({ id, name, image,
           <b>{price} руб.</b>
         </div>
           {onAddCart && <img onClick={onClickPlus} width={11} height={11} 
-          src= {isItemAdded(id) ? "/img/ok.svg" : "/img/plus.svg"}  />}
+          src= {isItemAdded(id) ? "img/ok.svg" : "img/plus.svg"}  />}
       </div>
       </>)
       }
