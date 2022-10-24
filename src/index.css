@@ -39,7 +39,9 @@ text-decoration: none;
   border-radius: 10px;
   padding: 0 15px;
   position: relative;
-
+}
+.search-block img{
+  margin-top: 10px;
 }
 .search-block input{
   outline: none;
