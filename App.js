@@ -51,7 +51,7 @@ class App extends Component {
         <div className='app-wrapper-content'>
           <Suspense fallback={<div><Preloader /></div>}>
           <Routes>
-            <Route path="/" element={<Navigate to={'/profile'} />} />
+            <Route path="" element={<Navigate to={'/profile'} />} />
             <Route path='/login' element={<LoginPage />} />
             <Route path="/profile/" element={<ProfileContainer />}>
             <Route path=":userId" element={<ProfileContainer />} />
